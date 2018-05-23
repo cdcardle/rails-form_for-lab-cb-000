@@ -9,6 +9,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def new
+    SchoolClass.new(params)
   end
 
   def create
