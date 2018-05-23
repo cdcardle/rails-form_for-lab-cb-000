@@ -23,6 +23,10 @@ class SchoolClassesController < ApplicationController
     @class.update(class_params(:room_number))
   end
 
+  def edit
+	  @class = SchoolClass.find(params[:id])
+	end
+
   private
 
   def class_params(*args)
