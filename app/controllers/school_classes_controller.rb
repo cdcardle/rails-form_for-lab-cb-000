@@ -13,12 +13,19 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
-    @class = SchoolClass.create(title: params[:title], room_number: params[:room_number])
+    @class = SchoolClass.new(class_params(:title, :room_number))
+    @class.save
     redirect_to school_class_path(@class)
   end
 
   def update
     @class = SchoolClass.find(params[:id])
-    @class.update(title: params[:title], room_number: params[:room_number])
+    @class.update(class_params(:room_number))
+  end
+
+  private
+
+  def class_params(*args)
+    params.require(:school_classes).permit(*args)
   end
 end
