@@ -22,10 +22,4 @@ class SchoolClassesController < ApplicationController
     @class = SchoolClass.find(params[:id])
     @class.update(class_params(:room_number))
   end
-
-  private
-
-  def class_params(*args)
-    params.require(:school_classes).permit(*args)
-  end
 end
