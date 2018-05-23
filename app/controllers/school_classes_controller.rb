@@ -12,6 +12,7 @@ class SchoolClassesController < ApplicationController
     @class = SchoolClass.new
 
   def create
+    @class = SchoolClass.new(class_params(:title, :room_number))
   end
 
   def update
@@ -19,7 +20,7 @@ class SchoolClassesController < ApplicationController
 
   private
 
-  def puts_params(*args)
+  def class_params(*args)
     params.require(:school_classes).permit(*args)
   end
 end
