@@ -103,3 +103,26 @@ SyntaxError (/home/cdcardle/rails-form_for-lab-cb-000/app/controllers/school_cla
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.8ms)
+
+
+Started GET "/school_classes" for 68.40.63.148 at 2018-05-23 12:34:16 +0000
+Processing by SchoolClassesController#index as HTML
+  Rendered school_classes/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/cdcardle/rails-form_for-lab-cb-000/app/views/school_classes/index.html.erb:1: syntax error, unexpected keyword_class, expecting '|'
+...er.new; @classes.each do |class| 
+...                               ^
+/home/cdcardle/rails-form_for-lab-cb-000/app/views/school_classes/index.html.erb:2: syntax error, unexpected '.'
+...;@output_buffer.append=( class.title - class.room_number );@...
+...                               ^
+/home/cdcardle/rails-form_for-lab-cb-000/app/views/school_classes/index.html.erb:2: syntax error, unexpected '.'
+...r.append=( class.title - class.room_number );@output_buffer....
+...                               ^
+/home/cdcardle/rails-form_for-lab-cb-000/app/views/school_classes/index.html.erb:5: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/school_classes/index.html.erb:1: syntax error, unexpected keyword_class, expecting '|'
+  app/views/school_classes/index.html.erb:2: syntax error, unexpected '.'
+  app/views/school_classes/index.html.erb:2: syntax error, unexpected '.'
+  app/views/school_classes/index.html.erb:5: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
