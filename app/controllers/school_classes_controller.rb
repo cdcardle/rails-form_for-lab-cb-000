@@ -10,6 +10,7 @@ class SchoolClassesController < ApplicationController
 
   def new
     @class = SchoolClass.new
+  end
 
   def create
     @class = SchoolClass.new(class_params(:title, :room_number))
