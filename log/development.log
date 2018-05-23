@@ -743,3 +743,24 @@ ActionView::Template::Error (First argument in form cannot contain nil or be emp
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.7ms)
+
+
+Started GET "/school_classes/1/edit" for 68.40.63.148 at 2018-05-23 15:47:21 +0000
+Processing by SchoolClassesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSchoolClass Load (0.1ms)[0m  SELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered school_classes/edit.html.erb within layouts/application (26.4ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (undefined method `school_class_title' for #<SchoolClass:0x007f85a49e59e0>):
+    2: 
+    3: <%= form_for(@class) do |f| %>
+    4:   <label>Class title:</label><br>
+    5:   <%= f.text_field :school_class_title %><br>
+    6: 
+    7:   <label>Class room number:</label><br>
+    8:   <%= f.text_field :room_number %><br>
+  app/views/school_classes/edit.html.erb:5:in `block in _app_views_school_classes_edit_html_erb__2151344757058094207_70106155679360'
+  app/views/school_classes/edit.html.erb:3:in `_app_views_school_classes_edit_html_erb__2151344757058094207_70106155679360'
+
+
