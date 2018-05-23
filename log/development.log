@@ -53,3 +53,28 @@ Migrating to CreateSchoolClasses (20180521174633)
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20180521174633"]]
   [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Algebra"], ["room_number", 101], ["created_at", "2018-05-23 12:29:04.270743"], ["updated_at", "2018-05-23 12:29:04.270743"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Geometry"], ["room_number", 121], ["created_at", "2018-05-23 12:29:04.274971"], ["updated_at", "2018-05-23 12:29:04.274971"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Biology"], ["room_number", 141], ["created_at", "2018-05-23 12:29:04.279286"], ["updated_at", "2018-05-23 12:29:04.279286"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "school_classes" ("title", "room_number", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Physics"], ["room_number", 161], ["created_at", "2018-05-23 12:29:04.282405"], ["updated_at", "2018-05-23 12:29:04.282405"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Joe"], ["last_name", "Smith"], ["created_at", "2018-05-23 12:29:04.291318"], ["updated_at", "2018-05-23 12:29:04.291318"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["first_name", "Carl"], ["last_name", "Carlson"], ["created_at", "2018-05-23 12:29:04.294721"], ["updated_at", "2018-05-23 12:29:04.294721"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Brett"], ["last_name", "Michaels"], ["created_at", "2018-05-23 12:29:04.297787"], ["updated_at", "2018-05-23 12:29:04.297787"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["first_name", "Johnny"], ["last_name", "Camper"], ["created_at", "2018-05-23 12:29:04.300445"], ["updated_at", "2018-05-23 12:29:04.300445"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
