@@ -322,3 +322,10 @@ Processing by SchoolClassesController#index as HTML
   [1m[35mSchoolClass Load (0.2ms)[0m  SELECT "school_classes".* FROM "school_classes"
   Rendered school_classes/index.html.erb within layouts/application (11.4ms)
 Completed 200 OK in 246ms (Views: 231.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/school_classes" for 68.40.63.148 at 2018-05-23 13:48:02 +0000
+Processing by SchoolClassesController#index as HTML
+  [1m[36mSchoolClass Load (0.2ms)[0m  [1mSELECT "school_classes".* FROM "school_classes"[0m
+  Rendered school_classes/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.2ms)
