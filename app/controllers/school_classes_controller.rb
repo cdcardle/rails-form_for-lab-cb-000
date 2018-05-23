@@ -26,6 +26,6 @@ class SchoolClassesController < ApplicationController
   private
 
   def class_params(*args)
-    params.require(:school_classes).permit(*args)
+    params.require(:school_class).permit(*args)
   end
 end
