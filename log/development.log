@@ -1367,3 +1367,13 @@ ActionView::MissingTemplate (Missing template school_classes/update, application
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (34.7ms)
+
+
+Started PATCH "/school_classes/1" for 68.40.63.148 at 2018-05-23 16:15:08 +0000
+Processing by SchoolClassesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K2FgpV+gwPSLaPGkCKYB6Fb1afj2/27c30qGJw91HGO8MXz0rK/X3+36kwYGWTkl/0YRFtNHMZN1Z6cQrzI0Uw==", "school_class"=>{"title"=>"Algebra", "room_number"=>"103"}, "commit"=>"Update School class", "id"=>"1"}
+  [1m[36mSchoolClass Load (0.2ms)[0m  [1mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://67.205.165.109:36709/school_classes/1
+Completed 302 Found in 17ms (ActiveRecord: 1.4ms)
