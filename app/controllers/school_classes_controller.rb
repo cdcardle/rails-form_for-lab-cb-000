@@ -20,7 +20,7 @@ class SchoolClassesController < ApplicationController
 
   def update
     @class = SchoolClass.find(params[:id])
-    @class.update(class_params(:room_number))
+    @class.update(class_params(:title, :room_number))
   end
 
   def edit
