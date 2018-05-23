@@ -305,3 +305,4 @@ Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 68.40.63.148 at 2018-05-23 13:35:47 +0000
+  [1m[36mSchoolClass Load (2.4ms)[0m  [1mSELECT "school_classes".* FROM "school_classes"[0m
