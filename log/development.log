@@ -306,3 +306,11 @@ Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 68.40.63.148 at 2018-05-23 13:35:47 +0000
   [1m[36mSchoolClass Load (2.4ms)[0m  [1mSELECT "school_classes".* FROM "school_classes"[0m
+
+
+Started GET "/school_classes" for 68.40.63.148 at 2018-05-23 13:43:45 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SchoolClassesController#index as HTML
+  [1m[35mSchoolClass Load (0.2ms)[0m  SELECT "school_classes".* FROM "school_classes"
+  Rendered school_classes/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 246ms (Views: 233.1ms | ActiveRecord: 0.5ms)
